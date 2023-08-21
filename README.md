@@ -3,7 +3,7 @@ Integracja HACS pobierajaca slado poznańskiej tPortmonetki.
 
 Repozytorium trzeba dodać w HACS>Integracje>Niestandardowe Repozytoria wklejąc tam link: https://github.com/shirou93/hacs-peka-poznan
 
-Przykład konfiguracji
+Przykład konfiguracji:
 
 ```
 sensor:
