@@ -3,6 +3,7 @@ Integracja Home Assistant, która pobiera saldo poznańskiej tPortmonetki
 
 Przykład konfiguracji:
 
+```
 sensor:
   - platform: peka_tportmonetka
     sensors:
@@ -16,4 +17,4 @@ sensor:
         password: 'Zaroweczka13'
         scan_interval:
           minutes: 30
-		  
+```
