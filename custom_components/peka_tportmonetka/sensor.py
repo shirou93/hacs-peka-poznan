@@ -15,7 +15,7 @@ DEFAULT_NAME = "Peka tPortmonetka Sensor"
 DEFAULT_SCAN_INTERVAL = timedelta(minutes=15)
 
 CONF_SENSORS = "sensors"
-CONF_RUN_SCRIPT = "/config/custom_components/peka_tportmonetka/run.py"  # Stała ścieżka do skryptu run.py
+CONF_RUN_SCRIPT = "/config/custom_components/peka_tportmonetka/get-peka.py" 
 
 SENSOR_SCHEMA = vol.Schema(
     {
@@ -65,11 +65,11 @@ class PekaTPortMonetkaSensor(Entity):
 
     @property
     def unit_of_measurement(self):
-        return "PLN"  # Dodaj jednostkę PLN
+        return "PLN"
 
     @property
     def icon(self):
-        return "mdi:wallet"  # Dodaj ikonę portfela
+        return "mdi:wallet"
 
     @property
     def should_poll(self):
