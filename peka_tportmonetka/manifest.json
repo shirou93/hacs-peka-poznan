@@ -1,0 +1,10 @@
+{
+  "codeowners": ["@shirou93"],
+  "config_flow": false,
+  "dependencies": [],
+  "documentation": "https://github.com/shirou93/hacs-peka-poznan",
+  "domain": "peka_tportmonetka",
+  "name": "peka_tportmonetka",
+  "requirements": [],
+  "version": "0.5.0"
+}
