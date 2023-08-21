@@ -1,6 +1,4 @@
-
-<<<<<<< HEAD
-Przykład konfiguracji:
+Przyklad konfiguracji:
 
 ```
 sensor:
@@ -17,5 +15,3 @@ sensor:
         scan_interval:
           minutes: 30
 ```
-=======
->>>>>>> 82af0b5794ef453e57ac3f009fc7f85ccbab3325
