@@ -9,7 +9,7 @@ Przykład konfiguracji:
 sensor:
   - platform: peka_tportmonetka
     sensors:
-      - name: Peka TPortMonetka Sensor 2
+      - name: Peka TPortMonetka Sensor 1
         login: 'login'
         password: 'password'
         scan_interval:
