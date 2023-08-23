@@ -1,7 +1,7 @@
 Integracja HACS pobierająca saldo poznańskiej tPortmonetki.
 
 
-Repozytorium trzeba dodać w HACS>Integracje>Niestandardowe Repozytoria wklejąc tam link: https://github.com/shirou93/hacs-peka-poznan
+Repozytorium trzeba dodać w HACS>Integracje>Niestandardowe Repozytoria wklejając tam link: https://github.com/shirou93/hacs-peka-poznan
 
 Przykład konfiguracji:
 
