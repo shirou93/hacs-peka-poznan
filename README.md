@@ -3,8 +3,10 @@ Integracja HACS pobierająca saldo poznańskiej tPortmonetki.
 
 Repozytorium trzeba dodać w HACS>Integracje>Niestandardowe Repozytoria wklejając tam link: https://github.com/shirou93/hacs-peka-poznan
 
+Ważne: Nie używamy cudzysłowów w konfiguracji sensorów.
+
+
 Przykład konfiguracji:
-Nie używamy cudzysłowów w konfiguracji.
 
 ```
 sensor:
@@ -22,5 +24,5 @@ sensor:
           minutes: 30
 
 ```
-W przypadku wskazania 0PLN trzeba sprawdzić czy nie ma założonego na profilu capcha. 
-Jeśli jest trzeba je rozwiązać i sensor przy następnej aktualizacji powinien zacząć ponownie działać.
+W przypadku wskazania 0PLN trzeba sprawdzić czy nie ma czasem założonego na profilu capcha. 
+Jeśli jest trzeba je rozwiązać. Sensor przy następnej aktualizacji powinien zacząć ponownie pobierać saldo.
