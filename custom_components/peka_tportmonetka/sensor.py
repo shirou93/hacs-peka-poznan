@@ -50,8 +50,8 @@ def setup_platform(hass, config, add_entities, discovery_info=None):
 class PekaTPortMonetkaSensor(Entity):
     def __init__(self, name, login, password, scan_interval):
         self._name = name
-        self._login = f"'login'"
-        self._password = f"'password'"
+        self._login = f"'{login}'"
+        self._password = f"'{password}'"
         self._state = None
         self._scan_interval = scan_interval
 
