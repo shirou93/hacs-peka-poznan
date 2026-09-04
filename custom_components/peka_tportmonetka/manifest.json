@@ -1,10 +1,11 @@
 {
   "codeowners": ["@shirou93"],
-  "config_flow": false,
+  "config_flow": true,
   "dependencies": [],
   "documentation": "https://github.com/shirou93/hacs-peka-poznan",
   "domain": "peka_tportmonetka",
   "name": "peka_tportmonetka",
   "requirements": [],
-  "version": "0.5.0"
+  "iot_class": "cloud_polling",
+  "version": "0.7.0"
 }
