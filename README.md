@@ -4,7 +4,7 @@ Po instalacji przez HACS dodaj integrację w **Ustawienia > Urządzenia i usług
 
 Repozytorium trzeba dodać w HACS>Integracje>Niestandardowe Repozytoria wklejając tam link: https://github.com/shirou93/hacs-peka-poznan
 
-W przypadku wskazania 0PLN trzeba sprawdzić czy nie ma czasem założonego na profilu capcha. 
-Jeśli jest trzeba je rozwiązać. Sensor przy następnej aktualizacji powinien zacząć ponownie pobierać saldo.
+W przypadku błędów z dodaniem konta należy sprawdzić czy nie ma czasem założonego na profilu capcha. 
+Jeśli jest, trzeba ją rozwiązać. Po zalogowaniu się z capcha dodanie konta powinno się powieść.
 
 Migracja ze starej wersji musi zostać wykonana ręcznie tj. Trzeba usunąć wpisy YAML, a następnie dodać ponownie w GUI.
