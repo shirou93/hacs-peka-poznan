@@ -6,3 +6,5 @@ Repozytorium trzeba dodać w HACS>Integracje>Niestandardowe Repozytoria wklejaj�
 
 W przypadku wskazania 0PLN trzeba sprawdzić czy nie ma czasem założonego na profilu capcha. 
 Jeśli jest trzeba je rozwiązać. Sensor przy następnej aktualizacji powinien zacząć ponownie pobierać saldo.
+
+Migracja ze starej wersji musi zostać wykonana ręcznie tj. Trzeba usunąć wpisy YAML, a następnie dodać ponownie w GUI.
