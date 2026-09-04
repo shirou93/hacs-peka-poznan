@@ -27,7 +27,7 @@ class PekaConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
     @config_entries.callback
     def async_get_options_flow(config_entry):
         """Return the options flow for an existing account."""
-        return PekaOptionsFlow(config_entry)
+        return PekaOptionsFlow()
 
     async def async_step_user(self, user_input=None):
         """Handle the initial setup form."""
@@ -69,10 +69,6 @@ class PekaConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
 
 class PekaOptionsFlow(config_entries.OptionsFlow):
     """Handle editing an existing PEKA account."""
-
-    def __init__(self, config_entry):
-        """Initialize the options flow."""
-        self.config_entry = config_entry
 
     async def async_step_init(self, user_input=None):
         """Handle the account edit form."""
