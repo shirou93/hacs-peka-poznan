@@ -19,5 +19,22 @@
     "abort": {
       "already_configured": "To konto PEKA jest już skonfigurowane."
     }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "PEKA tPortmonetka",
+        "description": "Zmień dane logowania lub ustawienia konta.",
+        "data": {
+          "name": "Nazwa sensora",
+          "login": "Login",
+          "password": "Hasło",
+          "scan_interval": "Odświeżanie (minuty)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Nie można zalogować się do PEKA ani pobrać salda."
+    }
   }
 }
