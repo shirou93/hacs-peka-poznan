@@ -10,6 +10,7 @@ from .const import CONF_LOGIN, CONF_PASSWORD
 
 LOGIN_URL = "https://www.peka.poznan.pl/sop/authenticate?lang=pl"
 CARDS_URL = "https://www.peka.poznan.pl/sop/account/cards?lang=pl"
+REQUEST_TIMEOUT = aiohttp.ClientTimeout(total=15)
 
 
 class PekaApiError(Exception):
@@ -24,7 +25,7 @@ async def async_get_balance(hass, data: dict[str, str]) -> float:
         async with session.post(
             LOGIN_URL,
             json={"username": data[CONF_LOGIN], "password": data[CONF_PASSWORD]},
-            timeout=aiohttp.ClientTimeout(total=15),
+            timeout=REQUEST_TIMEOUT,
         ) as response:
             response.raise_for_status()
             login_data = await response.json()
@@ -35,7 +36,7 @@ async def async_get_balance(hass, data: dict[str, str]) -> float:
         async with session.get(
             CARDS_URL,
             headers={"Authorization": f"Bearer {token}"},
-            timeout=aiohttp.ClientTimeout(total=15),
+            timeout=REQUEST_TIMEOUT,
         ) as response:
             response.raise_for_status()
             cards_data = await response.json()
