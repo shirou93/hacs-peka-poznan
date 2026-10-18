@@ -61,7 +61,7 @@ class PekaConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
 
     @staticmethod
     @config_entries.callback
-    def async_get_options_flow(config_entry):
+    def async_get_options_flow(_config_entry):
         """Return the options flow for an existing account."""
         return PekaOptionsFlow()
 
