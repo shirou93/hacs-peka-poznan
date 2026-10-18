@@ -1,3 +1,5 @@
+"""Constants for the PEKA tPortmonetka component."""
+
 from datetime import timedelta
 
 DOMAIN = "peka_tportmonetka"
